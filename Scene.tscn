@@ -1,0 +1,161 @@
+[gd_scene load_steps=11 format=3 uid="uid://b5ffnn23g1feq"]
+
+[ext_resource type="Texture2D" uid="uid://dog3ojcgolqox" path="res://Assets/XboxOne_Diagram_Simple.png" id="1_j2k6a"]
+[ext_resource type="Script" path="res://Joistick.gd" id="1_us5nj"]
+[ext_resource type="Texture2D" uid="uid://bytpehnopps0g" path="res://Assets/circle.png" id="2_bdhg2"]
+[ext_resource type="Texture2D" uid="uid://dt8ayvj372p8g" path="res://Assets/RL3.png" id="3_vl2vj"]
+[ext_resource type="Texture2D" uid="uid://b1ycbs3bp4wff" path="res://Assets/rect.png" id="4_ysont"]
+[ext_resource type="Texture2D" uid="uid://f4yu3s84fsiu" path="res://Assets/Directional_Arrow.png" id="6_xl48s"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5kimm"]
+load_path = "res://.godot/imported/LT.png-10b0fdb6827b5ace21cda1276ade4de7.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q7rn2"]
+load_path = "res://.godot/imported/RT.png-74db14306004a006ea3b2d16960f270a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q22vd"]
+load_path = "res://.godot/imported/LB.png-9bca83e2a6ab683ac2f2c7112b4e5a27.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7xgs4"]
+load_path = "res://.godot/imported/RB.png-924694f5cd3e343028c953b9f584d47f.ctex"
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_us5nj")
+
+[node name="Sprites" type="Node2D" parent="."]
+
+[node name="LT" type="Sprite2D" parent="Sprites"]
+position = Vector2(381.723, 129)
+texture = SubResource("CompressedTexture2D_5kimm")
+
+[node name="RT" type="Sprite2D" parent="Sprites"]
+position = Vector2(784.723, 129)
+texture = SubResource("CompressedTexture2D_q7rn2")
+
+[node name="LB" type="Sprite2D" parent="Sprites"]
+position = Vector2(406.973, 164.75)
+scale = Vector2(0.978261, 0.973684)
+texture = SubResource("CompressedTexture2D_q22vd")
+
+[node name="RB" type="Sprite2D" parent="Sprites"]
+position = Vector2(759.723, 164)
+scale = Vector2(0.978261, 0.973684)
+texture = SubResource("CompressedTexture2D_7xgs4")
+
+[node name="Y" type="Sprite2D" parent="Sprites"]
+position = Vector2(767.723, 244)
+texture = ExtResource("2_bdhg2")
+
+[node name="X" type="Sprite2D" parent="Sprites"]
+position = Vector2(717.723, 291)
+texture = ExtResource("2_bdhg2")
+
+[node name="B" type="Sprite2D" parent="Sprites"]
+position = Vector2(815.723, 286)
+texture = ExtResource("2_bdhg2")
+
+[node name="A" type="Sprite2D" parent="Sprites"]
+position = Vector2(765.723, 333)
+texture = ExtResource("2_bdhg2")
+
+[node name="Select" type="Sprite2D" parent="Sprites"]
+position = Vector2(531.723, 290)
+scale = Vector2(0.638298, 0.638298)
+texture = ExtResource("2_bdhg2")
+
+[node name="Start" type="Sprite2D" parent="Sprites"]
+position = Vector2(633.723, 291)
+scale = Vector2(0.638298, 0.638298)
+texture = ExtResource("2_bdhg2")
+
+[node name="L3" type="Sprite2D" parent="Sprites"]
+position = Vector2(401.723, 296)
+scale = Vector2(0.97619, 0.97619)
+texture = ExtResource("3_vl2vj")
+
+[node name="R3" type="Sprite2D" parent="Sprites"]
+position = Vector2(676.723, 399)
+scale = Vector2(0.97619, 0.97619)
+texture = ExtResource("3_vl2vj")
+
+[node name="DUp" type="Sprite2D" parent="Sprites"]
+position = Vector2(491.223, 366.736)
+scale = Vector2(1.02778, 0.904655)
+texture = ExtResource("4_ysont")
+
+[node name="DDown" type="Sprite2D" parent="Sprites"]
+position = Vector2(491.223, 424)
+scale = Vector2(1.02778, 0.944445)
+texture = ExtResource("4_ysont")
+
+[node name="DLeft" type="Sprite2D" parent="Sprites"]
+position = Vector2(457.723, 395.25)
+rotation = 1.5708
+scale = Vector2(1.01389, 0.944445)
+texture = ExtResource("4_ysont")
+
+[node name="DRight" type="Sprite2D" parent="Sprites"]
+position = Vector2(522.723, 395.375)
+rotation = 1.5708
+scale = Vector2(1.02083, 0.944445)
+texture = ExtResource("4_ysont")
+
+[node name="Line" type="Sprite2D" parent="Sprites"]
+position = Vector2(580.723, 321)
+scale = Vector2(0.510638, 0.510638)
+texture = ExtResource("1_j2k6a")
+
+[node name="AnalogicLeftUp" type="Sprite2D" parent="Sprites"]
+position = Vector2(403.723, 250)
+rotation = -1.5708
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="AnalogicLeftDown" type="Sprite2D" parent="Sprites"]
+position = Vector2(402.723, 357)
+rotation = 1.5708
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="AnalogicLeftLeft" type="Sprite2D" parent="Sprites"]
+position = Vector2(343.723, 306)
+rotation = 3.14159
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="AnalogicLeftRight" type="Sprite2D" parent="Sprites"]
+position = Vector2(458.723, 305)
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="AnalogicRightUp" type="Sprite2D" parent="Sprites"]
+position = Vector2(679.656, 351.932)
+rotation = -1.5708
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="AnalogicRightDown" type="Sprite2D" parent="Sprites"]
+position = Vector2(678.656, 458.932)
+rotation = 1.5708
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="AnalogicRightLeft" type="Sprite2D" parent="Sprites"]
+position = Vector2(619.656, 407.932)
+rotation = 3.14159
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="AnalogicRightRight" type="Sprite2D" parent="Sprites"]
+position = Vector2(734.656, 406.932)
+scale = Vector2(0.610722, 0.565022)
+texture = ExtResource("6_xl48s")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Vibration"
+
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
